@@ -357,6 +357,17 @@
       box-shadow: 0 22px 60px rgba(0, 0, 0, 0.4);
       transition: transform 0.45s cubic-bezier(0.16,1,0.3,1), border-color 0.3s;
     }
+    .frame img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      transition: transform 0.6s ease, filter 0.4s ease;
+      filter: saturate(0.92);
+    }
+    .photo-card:hover .frame img { transform: scale(1.05); filter: saturate(1.08); }
     .frame::before {
       content: "";
       position: absolute;
@@ -614,57 +625,111 @@
         </header>
         <div class="photo-grid">
           <figure class="photo-card">
-            <div class="frame"><span class="num">01</span></div>
-            <figcaption>
-              <h3>Delphine Carter</h3>
-              <p class="meta">Sunny&rsquo;s Bar &middot; Red Hook</p>
-              <p>Held note, eyes closed, the last verse of &ldquo;Trouble in Mind&rdquo; carrying over the bar.</p>
-            </figcaption>
+            <div class="frame"><img src="photos/Group.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
           </figure>
 
           <figure class="photo-card">
-            <div class="frame"><span class="num">02</span></div>
-            <figcaption>
-              <h3>Otis Greenwood</h3>
-              <p class="meta">Barb&egrave;s &middot; Park Slope</p>
-              <p>Slide bottleneck on the neck, the band leaning in for the turnaround.</p>
-            </figcaption>
+            <div class="frame"><img src="photos/Group-2.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
           </figure>
 
           <figure class="photo-card">
-            <div class="frame"><span class="num">03</span></div>
-            <figcaption>
-              <h3>The Gowanus Three</h3>
-              <p class="meta">Jalopy Theatre &middot; Carroll Gardens</p>
-              <p>Upright bass, washboard, and a resonator under one warm stage light.</p>
-            </figcaption>
+            <div class="frame"><img src="photos/Group-3.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
           </figure>
 
           <figure class="photo-card">
-            <div class="frame"><span class="num">04</span></div>
-            <figcaption>
-              <h3>Junior Mabon</h3>
-              <p class="meta">Threes Brewing &middot; Gowanus</p>
-              <p>Telecaster up high, the crowd a blur of motion behind the amp line.</p>
-            </figcaption>
+            <div class="frame"><img src="photos/Group-4.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
           </figure>
 
           <figure class="photo-card">
-            <div class="frame"><span class="num">05</span></div>
-            <figcaption>
-              <h3>Marva Lin Holloway</h3>
-              <p class="meta">Bell House &middot; Gowanus</p>
-              <p>Hands on the keys, the harmonica player waiting just off the cone of light.</p>
-            </figcaption>
+            <div class="frame"><img src="photos/Group-5.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
           </figure>
 
           <figure class="photo-card">
-            <div class="frame"><span class="num">06</span></div>
-            <figcaption>
-              <h3>The Red Hook Cutters</h3>
-              <p class="meta">Pioneer Works &middot; Red Hook</p>
-              <p>Full band, full volume &mdash; the closing number caught mid-shout.</p>
-            </figcaption>
+            <div class="frame"><img src="photos/Leona.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New2.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New3.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New4.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New5.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New6.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New7.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New8.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New9.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New10.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New11.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New12.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New13.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New14.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New15.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New16.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New17.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New18.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New19.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New20.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="frame"><img src="photos/New-2.jpg" alt="Brooklyn Blues live photograph" loading="lazy"></div>
           </figure>
         </div>
       </div>
