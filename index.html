@@ -307,16 +307,18 @@
       background: var(--blue);
       color: #07171F;
     }
-    .video-card figcaption { padding: 18px 4px 0; }
-    .video-card h3 {
-      font-family: var(--label);
-      font-weight: 600;
-      font-size: clamp(18px, 2.2vw, 24px);
-      letter-spacing: 0.01em;
-      margin: 0 0 5px;
+    .screen .player {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      background: #000;
+      border: 0;
+      display: block;
     }
-    .feature h3 { font-size: clamp(22px, 3vw, 32px); }
-    .video-card p { margin: 0; color: var(--muted); font-size: 15.5px; line-height: 1.55; }
+    .screen .tag, .screen .badge { z-index: 2; }
 
     /* ===== Divider ===== */
     .divider {
@@ -349,7 +351,7 @@
     .photo-card { margin: 0; }
     .frame {
       position: relative;
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 16 / 9;
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid var(--border);
@@ -552,58 +554,61 @@
           <h2 class="section-title">Video <em>Gallery</em></h2>
         </header>
         <div class="video-grid">
-          <!-- To publish a video, replace each .screen block with a <video controls> or an <iframe> embed. -->
           <figure class="video-card feature">
             <div class="screen">
               <span class="tag">Featured</span>
-              <button class="play" type="button" aria-label="Play: A Night at Sunny&#39;s Bar">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"/></svg>
-              </button>
-              <span class="badge">12:48</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="Shiela Eclipse">
+                <source src="video/ShielaEclip.mp4" type="video/mp4">
+              </video>
             </div>
-            <figcaption>
-              <h3>A Night at Sunny&rsquo;s Bar</h3>
-              <p>Two sets, one room, last light on Van Brunt Street &mdash; the Delphine Carter Trio recorded live in Red Hook.</p>
-            </figcaption>
           </figure>
 
           <figure class="video-card">
             <div class="screen">
-              <button class="play" type="button" aria-label="Play: Soundcheck at Barbès">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"/></svg>
-              </button>
-              <span class="badge">6:12</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="A Night at Sunny&#39;s Bar">
+                <source src="video/P1180274a.mp4" type="video/mp4">
+              </video>
             </div>
-            <figcaption>
-              <h3>Soundcheck, Barb&egrave;s</h3>
-              <p>The Otis Greenwood Trio finds the room before the doors open in Park Slope.</p>
-            </figcaption>
           </figure>
 
           <figure class="video-card">
             <div class="screen">
-              <button class="play" type="button" aria-label="Play: Backline">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"/></svg>
-              </button>
-              <span class="badge">4:39</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="Soundcheck, Barb&egrave;s">
+                <source src="video/P1168982a.mp4" type="video/mp4">
+              </video>
             </div>
-            <figcaption>
-              <h3>Backline</h3>
-              <p>Amps, slide, and a borrowed Telecaster &mdash; Junior Mabon between songs.</p>
-            </figcaption>
           </figure>
 
           <figure class="video-card">
             <div class="screen">
-              <button class="play" type="button" aria-label="Play: Jalopy, Late">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"/></svg>
-              </button>
-              <span class="badge">9:27</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="Backline">
+                <source src="video/P1169000a.mp4" type="video/mp4">
+              </video>
             </div>
-            <figcaption>
-              <h3>Jalopy, Late</h3>
-              <p>An after-midnight stomp through Carroll Gardens with the Gowanus Three.</p>
-            </figcaption>
+          </figure>
+
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Jalopy, Late">
+                <source src="video/P1180335a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </figure>
+
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Last Call">
+                <source src="video/P1168324a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </figure>
+
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Sidewalk Session">
+                <source src="video/P1180118a.mp4" type="video/mp4">
+              </video>
+            </div>
           </figure>
         </div>
       </div>
