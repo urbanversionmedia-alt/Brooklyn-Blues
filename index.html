@@ -307,6 +307,16 @@
       background: var(--blue);
       color: #07171F;
     }
+    .video-card figcaption { padding: 18px 4px 0; }
+    .video-card h3 {
+      font-family: var(--label);
+      font-weight: 600;
+      font-size: clamp(18px, 2.2vw, 24px);
+      letter-spacing: 0.01em;
+      margin: 0 0 5px;
+    }
+    .feature h3 { font-size: clamp(22px, 3vw, 32px); }
+    .video-card p { margin: 0; color: var(--muted); font-size: 15.5px; line-height: 1.55; }
     .screen .player {
       position: absolute;
       inset: 0;
@@ -351,7 +361,7 @@
     .photo-card { margin: 0; }
     .frame {
       position: relative;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 3 / 2;
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid var(--border);
@@ -523,15 +533,15 @@
     <div class="ticker-label">Latest</div>
     <div class="ticker-viewport">
       <div class="ticker-track">
-        <span class="ticker-item"><b>Blueprint</b> Blues helped shape rock and roll, soul, R&amp;B, and modern roots music.</span>
-        <span class="ticker-item"><b>Migration</b> The Great Migration carried the blues from the South into northern cities and new electric sounds.</span>
-        <span class="ticker-item"><b>2026 Awards</b> Ronnie Baker Brooks took B.B. King Entertainer of the Year at the Blues Music Awards.</span>
-        <span class="ticker-item"><b>Brooklyn</b> From Red Hook to Park Slope, the blues stays alive in small rooms, late sets, and working bands.</span>
+        <span class="ticker-item"><b>New Set</b> Junior Mabon &amp; the Red Hook Cutters &mdash; gallery now live</span>
+        <span class="ticker-item"><b>Booking</b> Summer 2026 documentation slots open through August</span>
+        <span class="ticker-item"><b>Print Drop</b> &ldquo;After Hours on Van Brunt&rdquo; &mdash; limited run of 40</span>
+        <span class="ticker-item"><b>Up Next</b> Saturday at Sunny&rsquo;s Bar &mdash; Delphine Carter Trio</span>
         <!-- duplicated for seamless loop -->
-        <span class="ticker-item" aria-hidden="true"><b>Blueprint</b> Blues helped shape rock and roll, soul, R&amp;B, and modern roots music.</span>
-        <span class="ticker-item" aria-hidden="true"><b>Migration</b> The Great Migration carried the blues from the South into northern cities and new electric sounds.</span>
-        <span class="ticker-item" aria-hidden="true"><b>2026 Awards</b> Ronnie Baker Brooks took B.B. King Entertainer of the Year at the Blues Music Awards.</span>
-        <span class="ticker-item" aria-hidden="true"><b>Brooklyn</b> From Red Hook to Park Slope, the blues stays alive in small rooms, late sets, and working bands.</span>
+        <span class="ticker-item" aria-hidden="true"><b>New Set</b> Junior Mabon &amp; the Red Hook Cutters &mdash; gallery now live</span>
+        <span class="ticker-item" aria-hidden="true"><b>Booking</b> Summer 2026 documentation slots open through August</span>
+        <span class="ticker-item" aria-hidden="true"><b>Print Drop</b> &ldquo;After Hours on Van Brunt&rdquo; &mdash; limited run of 40</span>
+        <span class="ticker-item" aria-hidden="true"><b>Up Next</b> Saturday at Sunny&rsquo;s Bar &mdash; Delphine Carter Trio</span>
       </div>
     </div>
   </div>
@@ -553,160 +563,56 @@
           <span class="eyebrow">Moving Pictures</span>
           <h2 class="section-title">Video <em>Gallery</em></h2>
         </header>
-   <figure class="video-card feature">
-  <div class="screen video-shell" data-video-shell>
-    <span class="tag">Featured</span>
-    <button
-      class="video-cover"
-      type="button"
-      aria-label="Play video 01"
-      data-video-button
-      data-video-src="video/P1168324a.mp4">
-      <img src="images/P1168324a.png" alt="Video 01 preview" class="video-thumb">
-      <span class="video-play">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8 5v14l11-7z"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-  <figcaption>
-    <h3>Video 01</h3>
-    <p></p>
-  </figcaption>
-</figure>
+        <div class="video-grid">
+          <figure class="video-card feature">
+            <div class="screen">
+              <span class="tag">Featured</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="A Night at Sunny&#39;s Bar">
+                <source src="video/P1180274a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </figure>
 
-<figure class="video-card">
-  <div class="screen video-shell" data-video-shell>
-    <button
-      class="video-cover"
-      type="button"
-      aria-label="Play video 02"
-      data-video-button
-      data-video-src="video/P1168982a.mp4">
-      <img src="images/P1168982a.png" alt="Video 02 preview" class="video-thumb">
-      <span class="video-play">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8 5v14l11-7z"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-  <figcaption>
-    <h3>Video 02</h3>
-    <p></p>
-  </figcaption>
-</figure>
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Soundcheck, Barb&egrave;s">
+                <source src="video/P1168982a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </figure>
 
-<figure class="video-card">
-  <div class="screen video-shell" data-video-shell>
-    <button
-      class="video-cover"
-      type="button"
-      aria-label="Play video 03"
-      data-video-button
-      data-video-src="video/P1169000a.mp4">
-      <img src="images/P1169000a.png" alt="Video 03 preview" class="video-thumb">
-      <span class="video-play">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8 5v14l11-7z"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-  <figcaption>
-    <h3>Video 03</h3>
-    <p></p>
-  </figcaption>
-</figure>
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Backline">
+                <source src="video/P1169000a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </figure>
 
-<figure class="video-card">
-  <div class="screen video-shell" data-video-shell>
-    <button
-      class="video-cover"
-      type="button"
-      aria-label="Play video 04"
-      data-video-button
-      data-video-src="video/P1180118a.mp4">
-      <img src="images/P1180118a.png" alt="Video 04 preview" class="video-thumb">
-      <span class="video-play">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8 5v14l11-7z"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-  <figcaption>
-    <h3>Video 04</h3>
-    <p></p>
-  </figcaption>
-</figure>
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Jalopy, Late">
+                <source src="video/P1180335a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </figure>
 
-<figure class="video-card">
-  <div class="screen video-shell" data-video-shell>
-    <button
-      class="video-cover"
-      type="button"
-      aria-label="Play video 05"
-      data-video-button
-      data-video-src="video/P1180274a.mp4">
-      <img src="images/P1180274a.png" alt="Video 05 preview" class="video-thumb">
-      <span class="video-play">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8 5v14l11-7z"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-  <figcaption>
-    <h3>Video 05</h3>
-    <p></p>
-  </figcaption>
-</figure>
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Last Call">
+                <source src="video/P1168324a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </figure>
 
-<figure class="video-card">
-  <div class="screen video-shell" data-video-shell>
-    <button
-      class="video-cover"
-      type="button"
-      aria-label="Play video 06"
-      data-video-button
-      data-video-src="video/P1180335a.mp4">
-      <img src="images/P1180335a.png" alt="Video 06 preview" class="video-thumb">
-      <span class="video-play">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8 5v14l11-7z"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-  <figcaption>
-    <h3>Video 06</h3>
-    <p></p>
-  </figcaption>
-</figure>
-
-<figure class="video-card">
-  <div class="screen video-shell" data-video-shell>
-    <button
-      class="video-cover"
-      type="button"
-      aria-label="Play Sheila E clip"
-      data-video-button
-      data-video-src="video/ShielaEclip.mp4">
-      <img src="images/ShielaEclip.png" alt="Sheila E clip preview" class="video-thumb">
-      <span class="video-play">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M8 5v14l11-7z"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-  <figcaption>
-    <h3>Sheila E Clip</h3>
-    <p></p>
-  </figcaption>
-</figure>
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Sidewalk Session">
+                <source src="video/P1180118a.mp4" type="video/mp4">
+              </video>
+            </div>
+          </figure>
+        </div>
       </div>
     </section>
 
