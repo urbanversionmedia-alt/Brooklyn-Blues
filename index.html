@@ -317,6 +317,18 @@
     }
     .feature h3 { font-size: clamp(22px, 3vw, 32px); }
     .video-card p { margin: 0; color: var(--muted); font-size: 15.5px; line-height: 1.55; }
+    .screen .player {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      background: #000;
+      border: 0;
+      display: block;
+    }
+    .screen .tag, .screen .badge { z-index: 2; }
 
     /* ===== Divider ===== */
     .divider {
@@ -552,14 +564,12 @@
           <h2 class="section-title">Video <em>Gallery</em></h2>
         </header>
         <div class="video-grid">
-          <!-- To publish a video, replace each .screen block with a <video controls> or an <iframe> embed. -->
           <figure class="video-card feature">
             <div class="screen">
               <span class="tag">Featured</span>
-              <button class="play" type="button" aria-label="Play: A Night at Sunny&#39;s Bar">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"/></svg>
-              </button>
-              <span class="badge">12:48</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="A Night at Sunny&#39;s Bar">
+                <source src="video/P1180274a.mp4" type="video/mp4">
+              </video>
             </div>
             <figcaption>
               <h3>A Night at Sunny&rsquo;s Bar</h3>
@@ -569,10 +579,9 @@
 
           <figure class="video-card">
             <div class="screen">
-              <button class="play" type="button" aria-label="Play: Soundcheck at Barbès">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"/></svg>
-              </button>
-              <span class="badge">6:12</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="Soundcheck, Barb&egrave;s">
+                <source src="video/P1168982a.mp4" type="video/mp4">
+              </video>
             </div>
             <figcaption>
               <h3>Soundcheck, Barb&egrave;s</h3>
@@ -582,10 +591,9 @@
 
           <figure class="video-card">
             <div class="screen">
-              <button class="play" type="button" aria-label="Play: Backline">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"/></svg>
-              </button>
-              <span class="badge">4:39</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="Backline">
+                <source src="video/P1169000a.mp4" type="video/mp4">
+              </video>
             </div>
             <figcaption>
               <h3>Backline</h3>
@@ -595,14 +603,37 @@
 
           <figure class="video-card">
             <div class="screen">
-              <button class="play" type="button" aria-label="Play: Jalopy, Late">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"/></svg>
-              </button>
-              <span class="badge">9:27</span>
+              <video class="player" controls preload="metadata" playsinline aria-label="Jalopy, Late">
+                <source src="video/P1180335a.mp4" type="video/mp4">
+              </video>
             </div>
             <figcaption>
               <h3>Jalopy, Late</h3>
               <p>An after-midnight stomp through Carroll Gardens with the Gowanus Three.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Last Call">
+                <source src="video/P1168324a.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption>
+              <h3>Last Call</h3>
+              <p>The final number before the lights come up &mdash; a slow burn through the small hours.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="video-card">
+            <div class="screen">
+              <video class="player" controls preload="metadata" playsinline aria-label="Sidewalk Session">
+                <source src="video/P1180118a.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption>
+              <h3>Sidewalk Session</h3>
+              <p>An impromptu set spilling out onto the street, caught between takes.</p>
             </figcaption>
           </figure>
         </div>
