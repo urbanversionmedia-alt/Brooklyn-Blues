@@ -188,17 +188,15 @@
       display: flex; flex-direction: column;
       align-items: center; text-align: center;
     }
-    .site-logo-text {
-      font-family: var(--display);
-      font-size: clamp(52px, 10vw, 120px);
-      line-height: 0.9;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      margin-bottom: 32px;
+    .site-logo-img {
+      width: min(680px, 90%);
+      height: auto;
+      margin: 0 auto 32px;
+      display: block;
+      mix-blend-mode: screen;
+      filter: drop-shadow(0 22px 48px rgba(0,0,0,0.6));
       animation: rise 0.9s cubic-bezier(0.16,1,0.3,1) both;
     }
-    .site-logo-text .blue { color: var(--blue); }
-    .site-logo-text .red { color: var(--red); }
     .subtitle {
       max-width: 760px; color: #D9CFC2;
       font-size: clamp(17px,1.85vw,23px); line-height: 1.5;
@@ -715,7 +713,7 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="container nav-inner">
-      <a href="#" class="nav-logo">Brooklyn <span>Blues</span></a>
+      <a href="#" class="nav-logo"><img src="logo.jpg" alt="Brooklyn Blues" style="height:36px;width:auto;mix-blend-mode:screen;" /></a>
       <ul class="nav-links">
         <li><a href="#scene">Scene</a></li>
         <li><a href="#interviews">Interviews</a></li>
@@ -735,9 +733,7 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-content">
-        <div class="site-logo-text">
-          Brooklyn<br><span class="blue">Blues</span><br><span class="red">Org</span>
-        </div>
+        <img class="site-logo-img" src="logo.jpg" alt="Brooklyn Blues Organization" />
         <p class="subtitle">Documenting the Blues through concert photography, artist storytelling, and Brooklyn's living music culture.</p>
         <div class="hero-rule"></div>
       </div>
