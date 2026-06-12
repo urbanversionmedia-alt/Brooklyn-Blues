@@ -313,11 +313,12 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: 1;
+      z-index: 2;
       background: #000;
       border: 0;
       display: block;
     }
+    .interview-featured .screen::before { display: none; }
     .screen .tag, .screen .badge { z-index: 2; }
 
     /* ===== Scene Section ===== */
@@ -357,7 +358,7 @@
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
     }
-    .interviews-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
+    .interviews-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: start; max-width: 900px; margin: 0 auto; }
     .interview-featured { position: relative; border-radius: 18px; overflow: hidden; border: 1px solid var(--border); }
     .interview-featured-img { position: relative; aspect-ratio: 4/3; overflow: hidden; }
     .interview-featured-img img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.85); transition: transform 0.5s ease, filter 0.4s ease; }
@@ -794,44 +795,11 @@
               </video>
             </div>
             <div style="margin-top:20px;padding:22px 26px;background:linear-gradient(135deg,#1A1512,#201915);border:1px solid #2E2723;border-top:2px solid #CA4B2D;border-radius:0 0 14px 14px;">
-              <p style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#CA4B2D;margin:0 0 10px;">Feature Interview &mdash; Artist Spotlight</p>
-              <p style="color:#D6CCBE;font-size:15px;line-height:1.8;font-family:'Spectral',Georgia,serif;margin:0;">How Brooklyn&rsquo;s blues musicians navigate a changing industry while staying true to the tradition. An intimate conversation on stage, craft, and keeping the blues alive in New York City.</p>
+              <p style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#CA4B2D;margin:0 0 10px;">Feature Interview &mdash; Seun Kuti &bull; BRIC Celebrate Brooklyn! &bull; July 13, 2024</p>
+              <p style="color:#D6CCBE;font-size:15px;line-height:1.8;font-family:'Spectral',Georgia,serif;margin:0;">Seun Kuti &mdash; youngest son of Afrobeat pioneer Fela Kuti and leader of the legendary Egypt 80 band &mdash; has never separated music from struggle. Caught backstage at the Lena Horne Bandshell after a commanding set, he spoke with raw conviction about the blues not as a genre but as a document of survival. To Seun, the blues is the sound of Black America under the boot of oppression &mdash; the same systemic violence his father fought in Nigeria, the same force Afrobeat was built to resist. &ldquo;The blues was born from the same wound,&rdquo; he said. &ldquo;Different soil, same pain.&rdquo; He sees African music and American blues as branches of the same tree, severed by the Atlantic slave trade but still drawing from the same roots &mdash; and he believes that reconnecting those threads is itself a revolutionary act. For Seun Kuti, music is not entertainment. It is the front line.</p>
             </div>
           </div>
-          <div class="interview-list">
-            <a href="#contact" class="interview-item">
-              <div class="interview-item-img"><img src="photos/New.jpg" alt="Interview" loading="lazy" /></div>
-              <div class="interview-item-body">
-                <span class="interview-item-tag">Q&amp;A</span>
-                <h4>Playing to the Room</h4>
-                <p>The craft of connecting with an audience up close in a small venue.</p>
-              </div>
-            </a>
-            <a href="#contact" class="interview-item">
-              <div class="interview-item-img"><img src="photos/New8.jpg" alt="Interview" loading="lazy" /></div>
-              <div class="interview-item-body">
-                <span class="interview-item-tag">Studio Session</span>
-                <h4>Tone, Touch &amp; Tradition</h4>
-                <p>What separates blues guitar from everything else.</p>
-              </div>
-            </a>
-            <a href="#contact" class="interview-item">
-              <div class="interview-item-img"><img src="photos/New10.jpg" alt="Interview" loading="lazy" /></div>
-              <div class="interview-item-body">
-                <span class="interview-item-tag">On the Road</span>
-                <h4>From the Delta to Brooklyn</h4>
-                <p>Tracing the migration of the blues to New York City.</p>
-              </div>
-            </a>
-            <a href="#contact" class="interview-item">
-              <div class="interview-item-img"><img src="photos/Leona.jpg" alt="Interview" loading="lazy" /></div>
-              <div class="interview-item-body">
-                <span class="interview-item-tag">On Stage</span>
-                <h4>The Living Legend</h4>
-                <p>A conversation about decades on the road and what keeps the music alive.</p>
-              </div>
-            </a>
-          </div>
+
         </div>
       </div>
     </section>
