@@ -787,38 +787,16 @@
           <h2 class="section-title">The <em>Artists</em></h2>
         </header>
         <div class="interviews-grid">
-          <div class="interview-featured" style="background:#0d0b09;">
-            <div style="position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:18px 18px 0 0;">
-              <video id="kutiVideo" style="width:100%;height:100%;object-fit:cover;display:block;" preload="metadata" playsinline>
+          <div class="interview-featured" style="background:transparent;border:none;">
+            <div class="screen" style="border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,0.45);">
+              <video id="kutiVideo" class="player" preload="metadata" playsinline controls aria-label="Feature Interview">
                 <source src="interview-kuti.mp4" type="video/mp4">
               </video>
-              <div id="kutiOverlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(12,10,9,0.35);cursor:pointer;transition:background 0.3s;">
-                <button id="kutiPlay" aria-label="Play interview" style="width:72px;height:72px;border-radius:50%;border:none;background:rgba(16,14,12,0.75);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 0 0 2px rgba(244,239,231,0.2),0 14px 40px rgba(0,0,0,0.5);transition:background 0.3s,transform 0.3s;">
-                  <svg width="28" height="28" viewBox="0 0 24 24" style="fill:#f4efe7;margin-left:4px;"><path d="M8 5v14l11-7z"/></svg>
-                </button>
-              </div>
             </div>
-            <div class="interview-featured-label" style="position:relative;padding:20px 24px;background:linear-gradient(135deg,#1A1512,#201915);border-top:2px solid #CA4B2D;">
-              <span class="interview-badge">Feature Interview</span>
-              <h3>The Stage Is the Story</h3>
-              <p>How Brooklyn&rsquo;s blues musicians navigate a changing industry while staying true to the tradition.</p>
+            <div style="margin-top:20px;padding:22px 26px;background:linear-gradient(135deg,#1A1512,#201915);border:1px solid #2E2723;border-top:2px solid #CA4B2D;border-radius:0 0 14px 14px;">
+              <p style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#CA4B2D;margin:0 0 10px;">Feature Interview &mdash; Artist Spotlight</p>
+              <p style="color:#D6CCBE;font-size:15px;line-height:1.8;font-family:'Spectral',Georgia,serif;margin:0;">How Brooklyn&rsquo;s blues musicians navigate a changing industry while staying true to the tradition. An intimate conversation on stage, craft, and keeping the blues alive in New York City.</p>
             </div>
-          </div>
-          <script>
-            (function(){
-              var v = document.getElementById("kutiVideo");
-              var o = document.getElementById("kutiOverlay");
-              var b = document.getElementById("kutiPlay");
-              if(!v) return;
-              b.addEventListener("click", function(){
-                v.play(); o.style.display="none";
-              });
-              v.addEventListener("pause", function(){ o.style.display="flex"; });
-              v.addEventListener("ended", function(){ o.style.display="flex"; });
-              o.addEventListener("mouseenter", function(){ o.style.background="rgba(12,10,9,0.2)"; b.style.background="#CA4B2D"; });
-              o.addEventListener("mouseleave", function(){ o.style.background="rgba(12,10,9,0.35)"; b.style.background="rgba(16,14,12,0.75)"; });
-            })();
-          </script>
           </div>
           <div class="interview-list">
             <a href="#contact" class="interview-item">
